@@ -50,7 +50,7 @@ header {
 }
 article {
 	grid-area: content;
-  	scroll-behavior: smooth;
+	scroll-behavior: smooth;
 	height: 90vh;
 	overflow-x: hidden;
 	overflow-y: auto;
@@ -144,6 +144,20 @@ article ol{
 
 article ul li::before{
 	content: "";
+}
+
+figure{
+	width: 90%;
+	margin: auto;
+	margin-block: 20px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+figure img{
+	width: 90%;
+	margin: auto;
 }
 
 article :active,
