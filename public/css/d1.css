@@ -24,13 +24,17 @@ body {
 	background: #225;
 	color: #225;
 }
+
 header {
 	grid-area: header;
 	height: 10vh;
 	display: flex;
 	background: #999;
 	font-size: 2.5vw;
+	padding-block: 5px;
+	align-items: center;
 }
+
 .sumario {
 	grid-area: sumario;
 	display: flex;
@@ -42,8 +46,6 @@ header {
 	padding-left: 1.5rem;
 	color: #fff;
 	transition: 2.5s;
-}
-.sumario[open] {
 	max-height: 90vh;
   	overflow-x: hidden;
   	overflow-y: visible;
@@ -95,6 +97,8 @@ p {
 p:last-of-type {
 	margin-bottom: 5rem;
 }
+
+.sumario,
 summary {
 	outline: none;
 	cursor: pointer;
@@ -126,7 +130,8 @@ li::before {
 }
 a {
   text-decoration: none;
-  color: yellow;
+  color: #ccc;
+  font-weight: 400;
 }
 article ul,
 article ol{
@@ -152,6 +157,28 @@ figure img{
 	margin: auto;
 }
 
+button{
+	background-color: #225;
+	color: white;
+	border: none;
+	padding: 0 15px;
+	font-size: 15px;
+	cursor: pointer;
+	margin-inline: 10px;
+	border-radius: 7px;
+	height: 41px;
+}
+
+.hidden{
+	display: none;
+}
+
+.hide-index{
+	grid-template-columns:  1fr;
+	grid-template-areas:
+		"header"
+		"content";
+}
 
 @media screen and (max-width: 600px) {
 	body {	
@@ -170,7 +197,20 @@ figure img{
 		padding: 1rem;
 		font-size: 5vw;
 	}
-	.sumario {display: none;}
+
+	.sumario {
+		display: none;
+	}
+
+	.show{
+		display: flex;
+	}
+	.hide-index{
+		grid-template-columns:  1fr;
+		grid-template-areas:
+			"header"
+			"sumario";
+	}
 }
 
 
