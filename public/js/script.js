@@ -7,7 +7,7 @@ window.addEventListener("load", ()=>{
     $index.addEventListener("click", function() {
         $sumario.classList.toggle("hidden");
         $body.classList.toggle("hide-index")
-        if(window.matchMedia("(max-width: 600px)")){
+        if(window.matchMedia("(max-width: 600px)").matches){
             $article.classList.toggle("hidden");
             $sumario.classList.toggle("show")
         }
