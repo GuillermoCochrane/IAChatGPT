@@ -76,11 +76,16 @@ h2 {
 h2 ~ h2 {
 	margin-top: 1.5rem;
 }
+h4,
 h3 {
 	font-weight: 400;
 	margin-top: .5rem;
 	padding-left: 1rem;
 	margin-bottom: .5rem;
+}
+h4{
+	font-size: 1.1rem;
+	font-style: italic;
 }
 p {
 	padding-left: 1rem;
@@ -99,16 +104,7 @@ summary {
 	font-variant: small-caps;
 	margin-left: -.5rem;
 }
-/* .sumario > summary::after {
-	/* content: '☰'; * /
-	display: inline-block;
-	padding-left: 1rem;
-	text-decoration: none;
-}
-.sumario[open] > summary::after {
-	content: '\00D7';
-	display: none;
-} */
+
 nav {
 	padding: 0 0 2rem .5rem;
 	transition: 1s;
@@ -132,10 +128,6 @@ a {
   text-decoration: none;
   color: yellow;
 }
-/* a:hover,
-/* summary:hover {
-	text-decoration: underline;
-} */
 article ul,
 article ol{
 	margin-block: 1em;
@@ -160,21 +152,6 @@ figure img{
 	margin: auto;
 }
 
-article :active,
-article :focus,
-article :target,
-article :active + p,
-article :focus + p,
-article :target + p {
-	background: rgba(255,255,255,.35);
-	box-shadow: 0 0 2px rgba(0,0,0,.2);
-}
-article :active + p,
-article :focus + p,
-article :target + p {
-	font-size: 110%;
-	font-weight: 400;
-}
 
 @media screen and (max-width: 600px) {
 	body {	
