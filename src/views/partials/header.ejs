@@ -18,7 +18,7 @@
         <nav>
           <ol>
             <li>
-              <details>
+              <details <%= id == 1 ? "open" : "" %>>
                 <summary>Inteligencia Artificial, conceptos fundamentales</summary>
                 <ol>
                   <li><a href="/1#inteligencia">¿Qué es la inteligencia?</a></li>
@@ -30,7 +30,7 @@
               </details>
             </li>
             <li>
-              <details >
+              <details <%= id == 2 ? "open" : "" %>>
                 <summary>Historia de la inteligencia artificial. Inicio y actualidad</summary>
                 <ol>
                   <li><a href="/2#50s">Década de 1950</a></li>
@@ -44,7 +44,7 @@
               </details>
             </li>
             <li>
-              <details>
+              <details <%= id == 3 ? "open" : "" %>>
                 <summary>Machine Learning y Redes Neuronales</summary>
                 <ol>
                   <li><a href="/3#learnign">¿Qué es y cómo funciona el Machine Learning?</a></li>
@@ -52,15 +52,23 @@
                 </ol>
               </details>
             </li>
-            <li><a href="/">Volver al inicio</a></li>
+            <li>
+              <details <%= id == 4 ? "open" : "" %> >
+                <summary>ChatGPT. Origen, Evolución y Diferencia entre versiones</summary>
+                <ol>
+                  <li><a href="/4#origen">Origen</a></li>
+                  <li><a href="/4#versiones">Todas sus versiones</a></li>
+                </ol>
+              </details>
+            </li>
           </ol>
+          
+          <a href="/"><button>Volver al inicio</button></a>
         </nav>
       </aside>
 
     <!-- < %= id == 2 ? "open" : "" %> -->
     <!--
-ChatGPT. Origen, Evolución y Diferencia entre versiones	9
-Todas sus versiones	9
 Prompt definición y conceptos	9
 ¿Qué es un Prompt?	9
 Componentes de un Prompt	10
