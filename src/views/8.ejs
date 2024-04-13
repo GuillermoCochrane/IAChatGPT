@@ -1,0 +1,43 @@
+<%- include("./partials/header.ejs") %>
+    
+    <article>
+    <h2>Formatos de salida</h2>
+    <h3 id="formatos">Introducción a formatos de salida</h3>
+    <p>Parte importante de un Prompt es el formato de salida que le solicitamos a ChatGPT ya que a partir de este se nos hará más fácil trabajar con los datos solicitados, a continuación, verás una lista con algunos ejemplos de formatos de salida que puede darte ChatGPT.</p> 
+    <ol>
+        <li>
+            <h4>Texto plano: </h4>
+            <p><strong>Ejemplo: </strong>"La fotosíntesis es el proceso mediante el cual las plantas y otros organismos convierten la luz solar en energía química para alimentarse y crecer."</p>
+        </li>
+        <li>
+            <h4>HTML:</h4>
+            <p><strong>Ejemplo: </strong>"&lt;p&gt;El cielo nocturno está lleno de estrellas brillantes que forman constelaciones reconocibles, como la Osa Mayor y Orión.&lt;/p&gt;" </p>
+        </li>
+        <li>
+            <h4>JSON: </h4>
+            <p><strong>Ejemplo: </strong>"respuesta": "¿Sabías que los robots también tienen sueños? Bueno, al menos hasta que se quedan sin batería."</p>
+        </li>
+        <li>
+            <h4>Markdown: </h4>
+            <p><strong>Ejemplo: </strong>"La amistad es como una planta; necesita cuidado y atención para crecer y florecer."</p>
+        </li>
+        <li>
+            <h4>XML: </h4>
+            <p><strong>Ejemplo: </strong>"&lt;respuesta&gt;En un universo paralelo, los gatos son los gobernantes supremos y los humanos son sus leales siervos que les sirven atún fresco todos los días.&lt;/respuesta&gt;" </p>
+        </li>
+        <li>
+            <h4>CSV: </h4>
+            <p><strong>Ejemplo: </strong>respuesta
+            "Imagina un mundo donde todos los problemas se resuelven con abrazos en lugar de discusiones. Sería un lugar mucho más cálido y amoroso, ¿no crees?"</p>
+        </li>
+        <li>
+            <p>¡Salida personalizada, cuanto más contexto mejor! </p>
+        </li>
+    </ol>
+    <h3 id="evaluación">Evaluación de Prompts</h3>
+    <p>Una vez optimizados los prompts, es crucial evaluar su efectividad en diferentes escenarios y tareas. Esto puede implicar la comparación de las respuestas generadas por el modelo utilizando diferentes variantes de prompts, así como la recopilación de métricas objetivas, como la precisión, coherencia y relevancia de las respuestas. Además, es importante considerar la retroalimentación cualitativa de los usuarios finales para evaluar la utilidad y adecuación de las respuestas generadas. </p> 
+    <p>Supongamos que estamos utilizando ChatGPT para generar respuestas a preguntas sobre salud. Después de optimizar el prompt utilizando técnicas mencionadas previamente, podemos evaluar su efectividad en términos de precisión y relevancia de las respuestas generadas. Podemos comparar las respuestas generadas por el modelo utilizando el prompt original y el prompt optimizado, y recopilar métricas objetivas, como la proporción de respuestas precisas y la coherencia del contenido. Además, podemos solicitar la retroalimentación de profesionales de la salud para evaluar la utilidad y precisión de las respuestas generadas en diferentes escenarios clínicos.</p>
+    <%- include("./partials/buttons.ejs") %>    
+</article>  
+
+<%- include("./partials/footer.ejs") %>
