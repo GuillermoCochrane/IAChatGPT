@@ -12,13 +12,12 @@ html {
 }
 
 body {
-	display:block;
 	overflow-y: auto;
 	background: #225;
 	color: #225;
 	display: flex;
 	flex-direction: column;
-	min-height: 100vh;
+	min-height: 90vh;
 }
 
 header {
@@ -162,7 +161,7 @@ button{
 	background-color: #225;
 	color: white;
 	border: none;
-	padding: 0 15px;
+	padding: 0px 15px;
 	font-size: 15px;
 	cursor: pointer;
 	margin-inline: 10px;
@@ -176,9 +175,19 @@ nav button{
 	background-color: #999;
 }
 
+footer{
+	min-height: 20px;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	padding: 10px;
+}
+
+
 .hidden{
 	display: flex;
 }
+
 
 @media (min-width: 870px){
 	body{
@@ -209,6 +218,7 @@ nav button{
 		height: 90vh;
 		overflow-x: hidden;
 		overflow-y: auto;
+		flex-grow: 1;
 	}
 
 	.hidden{
